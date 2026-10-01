@@ -1,0 +1,37 @@
+PORTAL DO EDUCADOR - PWA / CHROMEOS
+
+OBJETIVO
+Fazer o Portal do Educador aparecer com o próprio ícone no Chrome/ChromeOS
+e permitir instalação como aplicativo da Web.
+
+SITE
+https://portaldoeducador.com.br
+
+ARQUIVOS
+- manifest.webmanifest
+- portal-192.png
+- portal-512.png
+- portal-maskable-192.png
+- portal-maskable-512.png
+- codigo-para-head.html
+
+INSTALAÇÃO NO SITE
+1. Publique todos os arquivos PNG e o manifest.webmanifest em uma URL pública.
+2. De preferência, coloque-os na raiz do site.
+3. Adicione no <head> do site o conteúdo de codigo-para-head.html.
+4. Confirme que estas URLs abrem normalmente no navegador:
+   https://portaldoeducador.com.br/manifest.webmanifest
+   https://portaldoeducador.com.br/portal-192.png
+   https://portaldoeducador.com.br/portal-512.png
+
+GOOGLE ADMIN / CHROMEOS
+Depois, no Google Admin Console:
+Dispositivos > Chrome > Apps e extensões > Usuários e navegadores
+- Adicione o endereço https://portaldoeducador.com.br
+- Configure como instalação forçada, se desejar
+- Marque para fixar na estante/barra do ChromeOS, se disponível na sua política
+
+OBSERVAÇÃO PARA WEBNODE
+Se o Webnode não permitir colocar arquivos diretamente na raiz do domínio,
+é preciso hospedar esses arquivos em um endereço público acessível e ajustar
+os caminhos no manifest e no código do <head>.
